@@ -1,0 +1,164 @@
+html {
+	font-size: 100%;
+}
+body {
+	font: normal 62.5%/1.8 "Helvetica Neue",helvetica,sans-serif;
+	text-align: center;
+	background-color: #ebebeb;
+	color: #333;
+}
+h1 {
+  margin-top: 30px;
+  font-family: Palatino,Baskerville, "Book Antiqua",serif;
+  font-size: 2.8em;
+  font-weight: normal;
+}
+section.company h2 {
+  margin-top: 40px;
+}
+section.company {
+  margin-bottom: 30px;
+}
+section.bio img.about {
+	float: left;
+	padding: 0.2em;
+	border: 1px solid #ccc;
+	margin: 0 0.7em 0.4em 0;
+	line-height: 0;
+	background-color: #eee;
+}
+h2 {
+  font-size: 1.8em;
+  font-weight: normal;
+  font-family: Palatino,Baskerville, "Book Antiqua",serif;
+}
+p {
+  margin: 1em 0;
+}
+#container {
+  position: relative;
+	font-size: 1.2em;
+	padding: 2em 5em 4em;
+	margin: 2em auto;
+	text-align: left;
+	width: 60em;
+	background-color: #f7f7f6;
+	border: 2px solid #ddd;
+}
+#container ul.services {
+  margin: 0;
+  padding: 0;
+}
+h2 img.profile {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  bottom: 0;
+  border-radius: 3px;
+}
+h2 img {
+	float: left;
+	padding: 0.2em;
+	margin: 0 0.7em 0.4em 0;
+	border: 2px solid #ccc;
+	line-height: 0;
+	background-color: #eee;
+}
+p.other {
+	clear: both;
+}
+dl {
+	float: left;
+	width: 100%;
+	background-color: #eee;
+	padding: 0.5em;
+	border: 2px solid #ddd;
+	margin-bottom: 1.8em;
+}
+dl dt {
+	float: left;
+	width: 5em;
+	font-weight: bold;
+}
+dl dt:after {
+	content: ': ';
+}
+#extra {
+	clear: both;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  color: #0036ff;
+}
+a:visited {
+  border-color: #eee;
+  color: #333;
+}
+a:hover {
+  border-color: #333;
+}
+ul.org {
+  list-style: none;
+}
+ul.org li {
+  display: inline-block;
+  margin-right: 10px;
+}
+ul.org li a {
+  display: block;
+  background-color: #fff;
+  padding: 5px 15px 5px 30px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+ul.org li a:hover {
+  border-color: #eee;
+}
+a[href^="https://www.kissmetrics.com"],
+a[href^="http://kissmetrics.com"] {
+  background: image-url('km-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="https://www.within3.com"] {
+  background: image-url('within3-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="http://www.goedps.com"] {
+  background: image-url('edps-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="http://the-refinery.io"] {
+  background: image-url('the-refinery-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="https://www.automatic.com"] {
+  background: image-url('automatic-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="http://www.sprokets.net"] {
+  background: image-url('sprokets-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="https://www.vloan.com"] {
+  background: image-url('vloan-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+ul {
+  list-style: disc;
+}
+ul.services li h3 {
+  font-size: 1.4em;
+  margin: 1.4em 0 0 0;
+}
+ul.services li p {
+  margin-top: 0;
+}
