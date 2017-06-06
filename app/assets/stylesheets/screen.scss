@@ -19,6 +19,9 @@ section.company h2 {
 section.company {
   margin-bottom: 30px;
 }
+section.about {
+  margin-bottom: 15px;
+}
 section.bio img.about {
 	float: left;
 	padding: 0.2em;
@@ -147,8 +150,18 @@ a[href^="http://www.sprokets.net"] {
   font-weight: bold;
   border: 0;
 }
+a[href^="https://www.quicksprout.com"] {
+  background: image-url('quicksprout-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
 a[href^="https://www.vloan.com"] {
   background: image-url('vloan-icon.png') 10px 50% no-repeat;
+  font-weight: bold;
+  border: 0;
+}
+a[href^="https://www.fuelthecore.com"] {
+  background: image-url('core-nutrition-icon.png') 10px 50% no-repeat;
   font-weight: bold;
   border: 0;
 }
