@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     get 'order/confirmation', to: 'pages#confirmation'
     get 'share', to: 'pages#share'
     get 'conversion', to: 'pages#conversion'
+    get 'promotion', to: 'pages#promotion'
+    get 'promotion/subscription', to: 'pages#promotion_subscription'
   end
 
 end

@@ -1,0 +1,19 @@
+<h2>Promotion Subscription</h2>
+
+<span id=extole_zone_subscription_promotion></span>
+
+<% content_for(:extole_javascript) do %>
+<script type="text/javascript">
+    extole.createZone({
+        name: "subscription_promotion",
+        element_id: extole_zone_subscription_promotion,
+        parameters: {
+            "email": "extole-subscription@deviceindependent.com",
+            "first_name": "Extole",
+            "last_name": "Subscription",
+            "partner_user_id": "87121234",
+            "subscription_id": "SUBS-123"
+        }
+    });
+</script>
+<% end %>
