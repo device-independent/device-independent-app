@@ -1,0 +1,18 @@
+<h2>Registration</h2>
+
+<span id="extole_zone_confirmation"></span>
+
+<% content_for(:extole_javascript) do %>
+<script type="text/javascript">
+  extole.createZone({
+     name: 'registration',
+     data: {
+       "first_name":"Extole", // RECOMMENDED DYNAMIC VALUE
+       "last_name":"Friend", // RECOMMENDED DYNAMIC VALUE
+       "email":"extole-friend@deviceindependent.com", // REQUIRED DYNAMIC VALUE
+       "partner_user_id":"7891234", // REQUIRED DYNAMIC VALUE
+       //"advocate_code":"QA754AZ" // RECOMMENDED DYNAMIC VALUE
+     }
+  });
+</script>
+<% end %>

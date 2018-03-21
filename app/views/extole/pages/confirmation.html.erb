@@ -1,0 +1,18 @@
+<h2>Order Confirmation</h2>
+
+<span id="extole_zone_confirmation"></span>
+
+<% content_for(:extole_javascript) do %>
+<script type="text/javascript">
+   extole.createZone({
+        name: "confirmation",
+        element_id: extole_zone_confirmation,
+        parameters: {
+            "email": "extole-advocate@deviceindependent.com",
+            "first_name": "Extole",
+            "last_name": "Advocate",
+            "partner_user_id": "0123456"
+        }
+    });
+</script>
+<% end %>

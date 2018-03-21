@@ -1,0 +1,19 @@
+<h2>Product</h2>
+
+<span id="extole_zone_product"></span>
+
+<% content_for(:extole_javascript) do %>
+<script type="text/javascript">
+   extole.createZone({
+     name: 'product',
+     element_id: extole_zone_product,
+     data: {
+     "content": {
+       "title": "First Product",
+       "description": "This is the description of the first product",
+       "partner_content_id": "PRO-123"
+     }
+     }
+  });
+</script>
+<% end %>

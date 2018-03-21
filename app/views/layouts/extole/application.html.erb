@@ -7,11 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 
-<body id="home">
-<div id="extole_zone_global_header"></div>
-<span id=extole_zone_my_main_link></span>
-<span id=extole_zone_mobile_first_share_link></span>
-<span id=extole_zone_full_mobile_link></span>
+<body id="extole">
+
+<header id="header">
+  <nav>
+    <h1><%= link_to('Extole Demo', extole_root_path) %></h1>
+  </nav>
+<span id="extole_zone_global_header"></span>
+<span id="extole_zone_my_account"></span>
+</header>
+
+
+<footer id="footer" role="contentinfo">
+  <span id="extole_zone_global_footer"></span>
+</footer>
 
 <%= yield %>
 
@@ -24,72 +33,36 @@
 
    extole.createZone({
      name: 'global_header',
-     element_id: 'extole_zone_global_header',
-     data: {
-       "partner_user_id":"advocate-abcd",
-       "email": "extole@deviceindependent.com",
-       "first_name": "Extole",
-       "last_name": "Advocate"
-     }
+     element_id: extole_zone_global_header
+  });
+
+   extole.createZone({
+     name: 'global_footer',
+     element_id: extole_zone_global_footer
+  });
+
+   extole.createZone({
+     name: 'my_account',
+     element_id: extole_zone_my_account
   });
 
 extole.createZone({
-        name: "my_main_link",
-        element_id: extole_zone_my_main_link,
-        parameters: {
-            "email": "nate+main-link@theklaibers.com",
-            "first_name": "Nate",
-            "last_name": "Klaiber",
-            "partner_user_id": "main-link-abcd"
-        }
-    });
-
-  extole.createZone({
-     name: 'registration',
+     name: 'my_account',
+     element_id: extole_zone_my_account,
      data: {
-       "first_name":"Lester", // RECOMMENDED DYNAMIC VALUE
-       "last_name":"Tester", // RECOMMENDED DYNAMIC VALUE
-       "email":"friend@deviceindependent.com", // REQUIRED DYNAMIC VALUE
-       "partner_user_id":"friend-abcd", // REQUIRED DYNAMIC VALUE
-       "advocate_code":"QA754AZ" // RECOMMENDED DYNAMIC VALUE
+       "first_name":"Extole",
+       "last_name":"Advocate",
+       "email":"extole-advocate@deviceindependent.com",
+       "partner_user_id": "0123456",
      }
   });
 
-  extole.createZone({
-     name: 'conversion',
-     data: {
-       "first_name":"Lester", // RECOMMENDED DYNAMIC VALUE
-       "last_name":"Tester", // RECOMMENDED DYNAMIC VALUE
-       "email":"friend@deviceindependent.com", // REQUIRED DYNAMIC VALUE
-       "partner_user_id":"friend-abcd", // REQUIRED DYNAMIC VALUE
-       "advocate_code":"QA754AZ", // RECOMMENDED DYNAMIC VALUE
-       "partner_conversion_id":"CONV-SQA754AZ", // RECOMMENDED DYNAMIC VALUE
-       "cart_value":"53.00" // RECOMMENDED DYNAMIC VALUE
-     }
-  });
-    extole.createZone({
-        name: "mobile_first_share_link",
-        element_id: extole_zone_mobile_first_share_link,
-        parameters: {
-            "email": "nate+mf@theklaibers.com",
-            "first_name": "Nate",
-            "last_name": "Klaiber MF",
-            "partner_user_id": "mf-nk-abcd",
-            "nickname": "nate-mobile-first"
-        }
-    });
 
-    extole.createZone({
-        name: "full_mobile_link",
-        element_id: extole_zone_full_mobile_link,
-        parameters: {
-            "email": "full-mobile-link@theklaibers.com",
-            "first_name": "Full",
-            "last_name": "Mobile Link",
-            "partner_user_id": "full-ml-abcd1234"
-        }
-    });
+
+
+
 </script>
+<%= yield(:extole_javascript) %>
 
 </body>
 </html>
