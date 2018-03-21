@@ -10,6 +10,8 @@
 <body id="home">
 <div id="extole_zone_global_header"></div>
 <span id=extole_zone_my_main_link></span>
+<span id=extole_zone_mobile_first_share_link></span>
+<span id=extole_zone_full_mobile_link></span>
 
 <%= yield %>
 
@@ -52,6 +54,42 @@ extole.createZone({
        "advocate_code":"QA754AZ" // RECOMMENDED DYNAMIC VALUE
      }
   });
+
+  extole.createZone({
+     name: 'conversion',
+     data: {
+       "first_name":"Lester", // RECOMMENDED DYNAMIC VALUE
+       "last_name":"Tester", // RECOMMENDED DYNAMIC VALUE
+       "email":"friend@deviceindependent.com", // REQUIRED DYNAMIC VALUE
+       "partner_user_id":"friend-abcd", // REQUIRED DYNAMIC VALUE
+       "advocate_code":"QA754AZ", // RECOMMENDED DYNAMIC VALUE
+       "partner_conversion_id":"CONV-SQA754AZ", // RECOMMENDED DYNAMIC VALUE
+       "cart_value":"53.00" // RECOMMENDED DYNAMIC VALUE
+     }
+  });
+    extole.createZone({
+        name: "mobile_first_share_link",
+        element_id: extole_zone_mobile_first_share_link,
+        parameters: {
+            "email": "nate+mf@theklaibers.com",
+            "first_name": "Nate",
+            "last_name": "Klaiber MF",
+            "partner_user_id": "mf-nk-abcd",
+            "nickname": "nate-mobile-first"
+        }
+    });
+
+    extole.createZone({
+        name: "full_mobile_link",
+        element_id: extole_zone_full_mobile_link,
+        parameters: {
+            "email": "full-mobile-link@theklaibers.com",
+            "first_name": "Full",
+            "last_name": "Mobile Link",
+            "partner_user_id": "full-ml-abcd1234"
+        }
+    });
 </script>
+
 </body>
 </html>
